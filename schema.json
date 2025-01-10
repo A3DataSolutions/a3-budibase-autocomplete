@@ -90,6 +90,18 @@
         }
       },
       {
+        "type": "event",
+        "key": "selEvent",
+        "label": "Selection Event",
+        "context": [
+          {
+            "label": "Selected Objected",
+            "key": "selectedObj"
+          }
+        ]
+      }
+      ,
+      {
         "type": "text",
         "key": "loading",
         "label": "Loading State Binding",
