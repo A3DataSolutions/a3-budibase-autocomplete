@@ -1,6 +1,6 @@
 {
   "name": "a3-autocomplete",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Dynamic Autocomplete (based on https://github.com/pstanoev/simple-svelte-autocomplete)",
   "license": "MIT",
   "svelte": "index.js",

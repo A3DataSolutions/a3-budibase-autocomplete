@@ -8,6 +8,12 @@
     "icon": "Rename",
     "settings": [
       {
+        "type": "boolean",
+        "key": "ignoreCase",
+        "label": "Ignore Case",
+        "default": false
+      },
+      {
         "type": "field/string",
         "key": "field",
         "label": "Field"

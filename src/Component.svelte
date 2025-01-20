@@ -17,6 +17,7 @@
     export let labelFieldName;
     export let valueFieldName;
     export let selEvent;
+    export let ignoreCase;
 
     let resultsPromise;
     let loadingResolver;
@@ -55,6 +56,9 @@
             }
         }
   
+    }
+    function toLowerCase(text:string){
+        return ignoreCase ? toLowerCase(text) : text
     }
 
     $: delay = dataSourceType === "static" ? 0 : 100;
@@ -187,7 +191,7 @@
                 {valueFieldName}
                 onChange={handleChange}
                 {delay}
-                cleanUserText={false}
+                cleanUserText={toLowerCase}
             />
         </div>
         {#if fieldState?.error}
